@@ -1,4 +1,6 @@
 /*
+JavaScript Framework Detector v0.5.0
+
 adapted from Oskar Krawczyk's WTFramework
 (http://blog.olicio.us/2008/11/08/wtframework-bookmarklet/)
 */

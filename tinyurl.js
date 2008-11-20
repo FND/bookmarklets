@@ -1,4 +1,6 @@
 /*
+TinyURL Helper v1.0.1
+
 cf. http://fnd.lewcid.org/blog/archive/16
 */
 //javascript:
