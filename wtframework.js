@@ -38,7 +38,7 @@ adapted from Oskar Krawczyk's WTFramework
 	};
 
 	var frameworks = [];
-	check = function(indicator, name, version) { // TODO: support links
+	var check = function(indicator, name, version) { // TODO: support links
 		try {
 			if(window[indicator]) {
 				frameworks.push({ name: name, version: eval(version) }); // XXX: eval is evil
