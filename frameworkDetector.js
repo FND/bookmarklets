@@ -13,23 +13,22 @@ adapted from Oskar Krawczyk's WTFramework
 	}
 	c = document.createElement("div");
 	c.id = "__wtframework";
-	c.style.opacity = "0.7";
-	c.style.filter = "alpha(opacity = 70)";
 	c.style.position = "fixed";
-	c.style.zIndex = "9000";
 	c.style.top = "15px";
 	c.style.right = "20px";
-	c.style.background = "#000";
+	c.style.zIndex = "9000";
 	c.style.styleFloat = "right"; /* IE */
 	c.style.cssFloat = "right";
+	c.style.border = "2px solid #FFF";
 	c.style.padding = "7px 10px";
-	c.style.color = "#FFF";
-	c.style.border = "solid 2px #FFF";
-	c.style.textAlign = "left";
-	c.style.fontFamily = "'Lucida Grande',Helvetica,Tahoma";
-	c.style.fontSize = "12px";
 	c.style.MozBorderRadius = "5px";
 	c.style.WebkitBorderRadius = "5px";
+	c.style.fontFamily = "'Lucida Grande', Helvetica, Tahoma";
+	c.style.fontSize = "0.9em";
+	c.style.color = "#FFF";
+	c.style.backgroundColor = "#000";
+	c.style.opacity = "0.7";
+	c.style.filter = "alpha(opacity = 70)"; /* IE */
 	c.style.MozBoxShadow = "0px 0px 20px #000";
 	c.style.WebkitBoxShadow = "0px 0px 20px #000";
 	c.style.cursor = "pointer";
