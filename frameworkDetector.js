@@ -11,7 +11,7 @@ adapted from Oskar Krawczyk's WTFramework
 		document.body.removeChild(c);
 		return;
 	}
-	c = document.createElement("a");
+	c = document.createElement("div");
 	c.id = "__wtframework";
 	c.style.opacity = "0.7";
 	c.style.filter = "alpha(opacity = 70)";
@@ -25,18 +25,18 @@ adapted from Oskar Krawczyk's WTFramework
 	c.style.padding = "7px 10px";
 	c.style.color = "#FFF";
 	c.style.border = "solid 2px #FFF";
-	c.style.textDecoration = "none";
 	c.style.textAlign = "left";
-	c.style.fontFamily = "'Lucida Grande;,Helvetica,Tahoma";
+	c.style.fontFamily = "'Lucida Grande',Helvetica,Tahoma";
 	c.style.fontSize = "12px";
 	c.style.MozBorderRadius = "5px";
 	c.style.WebkitBorderRadius = "5px";
 	c.style.MozBoxShadow = "0px 0px 20px #000";
 	c.style.WebkitBoxShadow = "0px 0px 20px #000";
+	c.style.cursor = "pointer";
 	c.href = "#";
 	document.body.appendChild(c);
 	c.onclick = function() {
-		document.body.removeChild(c); // XXX: use this.parentNode.removeChild(this) ?
+		this.parentNode.removeChild(this);
 	};
 
 	var frameworks = [];
