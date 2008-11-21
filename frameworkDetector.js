@@ -1,8 +1,10 @@
 /*
-JavaScript Framework Detector v0.5.0
+JavaScript Framework Detector v1.0.0
 
 adapted from Oskar Krawczyk's WTFramework
 (http://blog.olicio.us/2008/11/08/wtframework-bookmarklet/)
+
+cf. http://fnd.lewcid.org/blog/archive/26
 */
 //javascript:
 (function() {
