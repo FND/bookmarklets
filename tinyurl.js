@@ -1,5 +1,5 @@
 /*
-TinyURL Helper v1.0.1
+TinyURL Helper v1.0.2
 
 cf. http://fnd.lewcid.org/blog/archive/16
 */
@@ -7,7 +7,7 @@ cf. http://fnd.lewcid.org/blog/archive/16
 (function() {
 	var extractTinyURL = function() {
 		var txt = document.body.innerHTML;
-		var RE = /(http:\/\/tinyurl.com\/\w+)/;
+		var RE = /blockquote.*(http:\/\/tinyurl.com\/\w+)/;
 		var original = document.getElementsByName("url")[0].value;
 		var tiny = txt.match(RE)[1];
 		return tiny + " (" + original + ")";
